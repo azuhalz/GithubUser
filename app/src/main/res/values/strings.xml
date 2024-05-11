@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Github User</string>
+    <string name="tab_1">Followers</string>
+    <string name="tab_2">Following</string>
+    <string name="username">Username</string>
+    <string name="followers">Followers</string>
+    <string name="followings">Followings</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="favorite">Favorite</string>
+    <string name="setting">Setting</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="home">Home</string>
+    <string name="detail_user">Detail User</string>
+    <string name="splash_screen">Splash Screen</string>
+    <string name="berhasil_dihapus">Berhasil dihapus dari Favorite</string>
+    <string name="berhasil_ditambah">Berhasil ditambahkan ke Favorite</string>
+    <string name="search_user">Search User</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.githubuser.fragment.HomeFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_detailUser"
+            app:destination="@id/detailUser" />
+    </fragment>
+    <activity
+        android:id="@+id/detailUser"
+        android:name="com.example.githubuser.activity.DetailUser"
+        android:label="DetailUser">
+        <argument
+            android:name="username"
+            android:defaultValue="name"
+            app:argType="string" />
+    </activity>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.githubuser.fragment.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite">
+        <action
+            android:id="@+id/action_favoriteFragment_to_detailUser"
+            app:destination="@id/detailUser" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.githubuser.fragment.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+</navigation>

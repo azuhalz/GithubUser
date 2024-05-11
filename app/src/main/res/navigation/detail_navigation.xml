@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detail_navigation"
+    app:startDestination="@id/followFragment"
+    tools:ignore="UnusedResources">
+
+    <fragment
+        android:id="@+id/followFragment"
+        android:name="com.example.githubuser.fragment.FollowFragment"
+        android:label="fragment_follow"
+        tools:layout="@layout/fragment_follow">
+        <action
+            android:id="@+id/action_followFragment_to_detailUser"
+            app:destination="@id/detailUser" />
+    </fragment>
+    <activity
+        android:id="@+id/detailUser"
+        android:name="com.example.githubuser.activity.DetailUser"
+        android:label="activity_detail"
+        tools:layout="@layout/activity_detail_user">
+        <argument
+            android:name="username"
+            android:defaultValue="name"
+            app:argType="string" />
+    </activity>
+</navigation>
